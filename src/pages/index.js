@@ -1,7 +1,7 @@
 import Layout from "@/components/Layout";
 import Head from "next/head";
 import Image from "next/image";
-import profilePic from "../../public/images/profile/developer-pic-1.png";
+import profilePic from "../../public/images/profile/profile1.png";
 import AnimatedText from "@/components/AnimatedText";
 import Link from "next/link";
 import { LinkArrow } from "@/components/Icons";
@@ -22,7 +22,7 @@ export default function Home() {
               <Image
                 src={profilePic}
                 alt="Mason Nguyen"
-                className="w-full h-auto"
+                className="w-full h-auto w"
               />
             </div>
             <div className="w-1/2 flex flex-col items-center self-center">
@@ -56,9 +56,9 @@ export default function Home() {
           </div>
         </Layout>
         <HireMe />
-        <div className="absolute right-8 bottom-8 inline-block w-24">
+        {/* <div className="absolute right-8 bottom-8 inline-block w-24">
           <Image src={lightBulb} alt="asdf" className="w-full h-auto" />
-        </div>
+        </div> */}
       </main>
     </>
   );
